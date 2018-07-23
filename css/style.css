@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/**************** 共通設定 *********************/
+html {
+  /**
+   * 親要素フォントサイズを10pxに変更
+   * フォントサイズ変更時はrem指定
+   * ex) 14pxの場合、[font-size: 1.4rem;]を指定
+   */
+  font-size: 62.5%;
+  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
+}
+html body {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  background-color: #fff6ee;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/**************** ページタイトル *****************/
+header {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #60d2c9;
+  margin: 20px 0;
+}
+header div.logo {
+  text-align: center;
+}
+header div.logo h1 {
+  display: inline-block;
+}
+header div.logo p {
+  font-size: 2.0rem;
+  margin: 0 auto;
+}
+
+/*************** ナビバー *******************/
+main nav ul.nav_area {
+  box-sizing: border-box;
+}
+main nav ul.nav_area li.nav_item {
+  display: inline-block;
+  margin: 0 auto;
+  width: 25%;
+  background-color: #60d2c9;
+  text-align: center;
+}
+main nav ul.nav_area li.nav_item a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin: .5rem auto;
+}
+
+/*# sourceMappingURL=style.css.map */

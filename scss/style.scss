@@ -1,0 +1,63 @@
+@charset "UTF-8";
+$main-color: #fff6ee;
+$sub-color: #60d2c9;
+$accent-color: #88e2af;
+/**************** 共通設定 *********************/
+html {
+  /**
+   * 親要素フォントサイズを10pxに変更
+   * フォントサイズ変更時はrem指定
+   * ex) 14pxの場合、[font-size: 1.4rem;]を指定
+   */
+  font-size: 62.5%;
+  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
+  body {
+    font-size: 1.6rem; //デフォルト16px
+    letter-spacing: 0.1em;
+    background-color: $main-color;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+}
+/**************** ページタイトル *****************/
+header {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: $sub-color;
+  margin: 20px 0;
+  div.logo {
+    text-align: center;
+    h1 {
+      display: inline-block;
+    }
+    p{
+      font-size: 2.0rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*************** ナビバー *******************/
+main {
+  nav {
+    ul.nav_area {
+      box-sizing: border-box; //widthにborderを含める（widthに100%指定してOKよ）
+      li.nav_item {
+        display: inline-block;
+        margin: 0 auto;
+        width: 25%;
+        background-color: $sub-color;
+
+        //子要素のaタグを中央揃え
+        text-align: center;
+        a {
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+          display: inline-block;
+          margin: .5rem auto;
+        }
+      }
+    }
+  }
+}
