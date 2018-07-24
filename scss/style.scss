@@ -8,6 +8,7 @@ html {
    * 親要素フォントサイズを10pxに変更
    * フォントサイズ変更時はrem指定
    * ex) 14pxの場合、[font-size: 1.4rem;]を指定
+   * あずきフォントから優先的に使用される。（フリーフォントだよー！まるくてかわいいな！ありがとう！）
    */
   font-size: 62.5%;
   font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
@@ -15,7 +16,7 @@ html {
     font-size: 1.6rem; //デフォルト16px
     letter-spacing: 0.1em;
     background-color: $main-color;
-    margin: 0 auto;
+    margin: 0 2%;
     max-width: 980px;
   }
 }
@@ -38,25 +39,47 @@ header {
 }
 
 /*************** ナビバー *******************/
-main {
-  nav {
-    ul.nav_area {
-      box-sizing: border-box; //widthにborderを含める（widthに100%指定してOKよ）
-      li.nav_item {
-        display: inline-block;
-        margin: 0 auto;
-        width: 25%;
-        background-color: $sub-color;
+nav {
+  ul.nav_area {
+    li.nav_item {
+      box-sizing: border-box;//widthにborderを含める（widthに100%指定してOKよ）
+      display: inline-block;
+      width: 25%;
+      border-right: 2px;
+      border-color:#ffffff;
+      border-style:  solid;
+      background-color: $sub-color;
 
-        //子要素のaタグを中央揃え
-        text-align: center;
-        a {
-          color: white;
-          font-weight: bold;
-          text-decoration: none;
-          display: inline-block;
-          margin: .5rem auto;
-        }
+      //子要素のaタグ中央揃え
+      text-align: center;
+      a {
+        color: #ffffff;
+        letter-spacing: 0.4em;
+        font-size: 2.0rem;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        //width: 100%;
+        padding: 1.0rem;
+        margin: 0 auto;
+      }
+      a:hover {
+        color: $sub-color;
+        background-color: #ffffff;
+      }
+    }
+    li:last-child {
+      //最後の要素のボーダーラインを消す
+      border-right: 0;
+    }
+  }
+}
+/*************** メインコンテンツ ****************/
+main {
+  ul {
+    li {
+      img {
+        width: 100%;
       }
     }
   }

@@ -5,6 +5,7 @@ html {
    * 親要素フォントサイズを10pxに変更
    * フォントサイズ変更時はrem指定
    * ex) 14pxの場合、[font-size: 1.4rem;]を指定
+   * あずきフォントから優先的に使用される。（フリーフォントだよー！まるくてかわいいな！ありがとう！）
    */
   font-size: 62.5%;
   font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
@@ -13,7 +14,7 @@ html body {
   font-size: 1.6rem;
   letter-spacing: 0.1em;
   background-color: #fff6ee;
-  margin: 0 auto;
+  margin: 0 2%;
   max-width: 980px;
 }
 
@@ -36,22 +37,37 @@ header div.logo p {
 }
 
 /*************** ナビバー *******************/
-main nav ul.nav_area {
+nav ul.nav_area li.nav_item {
   box-sizing: border-box;
-}
-main nav ul.nav_area li.nav_item {
   display: inline-block;
-  margin: 0 auto;
   width: 25%;
+  border-right: 2px;
+  border-color: #ffffff;
+  border-style: solid;
   background-color: #60d2c9;
   text-align: center;
 }
-main nav ul.nav_area li.nav_item a {
-  color: white;
+nav ul.nav_area li.nav_item a {
+  color: #ffffff;
+  letter-spacing: 0.4em;
+  font-size: 2.0rem;
   font-weight: bold;
   text-decoration: none;
-  display: inline-block;
-  margin: .5rem auto;
+  display: block;
+  padding: 1.0rem;
+  margin: 0 auto;
+}
+nav ul.nav_area li.nav_item a:hover {
+  color: #60d2c9;
+  background-color: #ffffff;
+}
+nav ul.nav_area li:last-child {
+  border-right: 0;
+}
+
+/*************** メインコンテンツ ****************/
+main ul li img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

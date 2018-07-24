@@ -17,19 +17,20 @@
       <p>for acchan</p>
     </div>
   </header>
+  <nav>
+    <ul class="nav_area">
+      <!-- liを改行すると半角スペースが挿入されてスタイルがおかしくなるよ！ -->
+      <li class="nav_item"><a href="#">HOME</a></li><li class="nav_item"><a href="#">ABOUT</a></li><li class="nav_item"><a href="#">BLOG</a></li><li class="nav_item"><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
   <main>
-    <nav>
-      <div class="nav_inner">
-        <ul class="nav_area">
-          <!-- liを改行すると半角スペースが挿入されてスタイルがおかしくなるよ！ -->
-          <li class="nav_item"><a href="#">HOME</a></li><li class="nav_item"><a href="#">ABOUT</a></li><li class="nav_item"><a href="#">BLOG</a></li><li class="nav_item"><a href="#">CONTENT</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="nav_under_img">
-      <img src="#" alt="フェレット">
-    </section>
-    <section class="about">
+    <ul class="slider">
+      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+    </ul>
+    <article class="about">
       <div class="about_title">
         <h1>ABOUT</h1>
       </div>
@@ -40,11 +41,11 @@
         </p>
       </div>
       <div class="about_contents">
-        <div class="product"></div>
-        <div class="skill"></div>
-        <div class="other"></div>
+        <section class="product"></section>
+        <section class="skill"></section>
+        <section class="other"></section>
       </div>
-    </section>
+    </article>
 
     <section class="blog">
       <div class="blog_title">
