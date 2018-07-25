@@ -41,6 +41,7 @@ header {
 /*************** ナビバー *******************/
 nav {
   ul.nav_area {
+    margin-bottom: 10px;
     li.nav_item {
       box-sizing: border-box;//widthにborderを含める（widthに100%指定してOKよ）
       display: inline-block;
@@ -74,11 +75,43 @@ nav {
     }
   }
 }
-/*************** メインコンテンツ ****************/
+/*************** スライダー ****************/
+//スライダー本体のサイズ
+.slick_container {
+    width:100%; /* 任意の値 */
+    margin:0 auto; /* 任意の値 */
+    position:relative;
+}
+
+ .slick-prev, .slick-next {
+    width:50px; /* 画像幅 */
+    height:50px /* 画像高さ */
+}
+.slick-prev:before, .slick-next:before {
+    content:"";
+}
+
+button.slick-prev, button.slick-next {
+    z-index:2;
+}
+
+.slick-prev {
+  left:20px;
+}
+.slick-next {
+  right:20px;
+}
+
+.slick-arrow {
+  z-index:10;
+}
+
+//微調整
 main {
   ul {
     li {
       img {
+        margin: 0 auto;
         width: 100%;
       }
     }

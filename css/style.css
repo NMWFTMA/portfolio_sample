@@ -8,35 +8,31 @@ html {
    * あずきフォントから優先的に使用される。（フリーフォントだよー！まるくてかわいいな！ありがとう！）
    */
   font-size: 62.5%;
-  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
-}
+  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体'; }
 html body {
   font-size: 1.6rem;
   letter-spacing: 0.1em;
   background-color: #fff6ee;
   margin: 0 auto;
-  max-width: 980px;
-}
+  max-width: 980px; }
 
 /**************** ページタイトル *****************/
 header {
   font-size: 3.6rem;
   font-weight: bold;
   color: #60d2c9;
-  margin: 20px 0;
-}
+  margin: 20px 0; }
 header div.logo {
-  text-align: center;
-}
+  text-align: center; }
 header div.logo h1 {
-  display: inline-block;
-}
+  display: inline-block; }
 header div.logo p {
   font-size: 2.0rem;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /*************** ナビバー *******************/
+nav ul.nav_area {
+  margin-bottom: 10px; }
 nav ul.nav_area li.nav_item {
   box-sizing: border-box;
   display: inline-block;
@@ -45,8 +41,7 @@ nav ul.nav_area li.nav_item {
   border-color: #ffffff;
   border-style: solid;
   background-color: #60d2c9;
-  text-align: center;
-}
+  text-align: center; }
 nav ul.nav_area li.nav_item a {
   color: #ffffff;
   letter-spacing: 0.4em;
@@ -55,19 +50,43 @@ nav ul.nav_area li.nav_item a {
   text-decoration: none;
   display: block;
   padding: 1.0rem;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 nav ul.nav_area li.nav_item a:hover {
   color: #60d2c9;
-  background-color: #ffffff;
-}
+  background-color: #ffffff; }
 nav ul.nav_area li:last-child {
-  border-right: 0;
-}
+  border-right: 0; }
 
-/*************** メインコンテンツ ****************/
-main ul li img {
+/*************** スライダー ****************/
+.slick_container {
   width: 100%;
-}
+  /* 任意の値 */
+  margin: 0 auto;
+  /* 任意の値 */
+  position: relative; }
+
+.slick-prev, .slick-next {
+  width: 50px;
+  /* 画像幅 */
+  height: 50px; }
+
+.slick-prev:before, .slick-next:before {
+  content: ""; }
+
+button.slick-prev, button.slick-next {
+  z-index: 2; }
+
+.slick-prev {
+  left: 20px; }
+
+.slick-next {
+  right: 20px; }
+
+.slick-arrow {
+  z-index: 10; }
+
+main ul li img {
+  margin: 0 auto;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

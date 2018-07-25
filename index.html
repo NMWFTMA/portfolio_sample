@@ -5,21 +5,29 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- reset.css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <!-- fontawesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <!--slick-->
+    <!--slick (css)-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="screen" />
+    <!-- 自分で書いたcss -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- ajaxとjquery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <!--slick-->
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"></script>
-
+      <!--slick (js)-->
+    <script src="slick/slick.min.js"></script>
+    <!-- 自分で書いたcss -->
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
+
+  <!-- くしくし。へけっ！ -->
+
   <body>
   <header>
     <div class="logo">
@@ -35,13 +43,24 @@
     </ul>
   </nav>
   <main>
-    <ul class="slider single-item">
-      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
-      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
-      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
-      <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
-    </ul>
-    <div class="slider_list"></div>
+    <div class="slick_container">
+      <!-- スライダー画像 -->
+      <ul id="slider">
+        <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+        <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+        <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+        <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
+      </ul>
+      <!-- スライダー矢印 -->
+      <div id="arrows">
+        <div class="slick-next">
+          <img src="images/slide-next.png" alt="→">
+        </div>
+        <div class="slick-prev">
+          <img src="images/slide-prev.png" alt="←">
+        </div>
+      </div>
+    </div>
     <article class="about">
       <div class="about_title">
         <h1>ABOUT</h1>
@@ -90,7 +109,5 @@
       </div>
     </section>
   </main>
-  <sclipt>alert("aa");</sclipt>
-  <script type="text/javascript" src="js/main.js">
   </body>
 </html>
