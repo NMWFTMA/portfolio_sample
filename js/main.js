@@ -30,6 +30,6 @@ $(function() {
     // 左右の次へ、前へボタンを表示するかどうか
     arrows: true,
     //矢印の代わりに肉球に差し替える
-    //appendArrows: $('#arrows')
+    appendArrows: $('#arrows')
   });
 });

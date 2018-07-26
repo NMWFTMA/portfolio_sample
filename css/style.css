@@ -8,32 +8,69 @@ html {
    * あずきフォントから優先的に使用される。（フリーフォントだよー！まるくてかわいいな！ありがとう！）
    */
   font-size: 62.5%;
-  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体'; }
+  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
+  background: repeat url(../images/index-background-01.jpg);
+}
+
 html body {
   font-size: 1.6rem;
   letter-spacing: 0.1em;
-  background-color: #fff6ee;
+  line-height: 200%;
+  background-color: rgba(255, 246, 238, 0.6);
   margin: 0 auto;
-  max-width: 980px; }
+  max-width: 980px;
+}
+
+html body h1 {
+  font-size: 3.0rem;
+}
+
+html body h2 {
+  font-size: 2.4rem;
+}
+
+html body p {
+  font-size: 2.0rem;
+}
+
+html body a {
+  font-size: 2.0rem;
+}
 
 /**************** ページタイトル *****************/
 header {
   font-size: 3.6rem;
   font-weight: bold;
   color: #60d2c9;
-  margin: 20px 0; }
-header div.logo {
-  text-align: center; }
-header div.logo h1 {
-  display: inline-block; }
-header div.logo p {
-  font-size: 2.0rem;
-  margin: 0 auto; }
+  background: url(../images/index-nav-01.jpg);
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  z-index: 2;
+  max-width: 980px;
+  width: 100%;
+  /************ トップのロゴ **************/
+  /*************** ナビバー *******************/
+}
 
-/*************** ナビバー *******************/
-nav ul.nav_area {
-  margin-bottom: 10px; }
-nav ul.nav_area li.nav_item {
+header div.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header div.logo h1 {
+  display: inline-block;
+}
+
+header div.logo p {
+  margin: 0 auto;
+}
+
+header nav ul.nav-area {
+  margin-bottom: 10px;
+}
+
+header nav ul.nav-area li.nav-item {
   box-sizing: border-box;
   display: inline-block;
   width: 25%;
@@ -41,52 +78,97 @@ nav ul.nav_area li.nav_item {
   border-color: #ffffff;
   border-style: solid;
   background-color: #60d2c9;
-  text-align: center; }
-nav ul.nav_area li.nav_item a {
+  text-align: center;
+}
+
+header nav ul.nav-area li.nav-item a {
   color: #ffffff;
   letter-spacing: 0.4em;
   font-size: 2.0rem;
   font-weight: bold;
   text-decoration: none;
   display: block;
-  padding: 1.0rem;
-  margin: 0 auto; }
-nav ul.nav_area li.nav_item a:hover {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+header nav ul.nav-area li.nav-item a:hover {
   color: #60d2c9;
-  background-color: #ffffff; }
-nav ul.nav_area li:last-child {
-  border-right: 0; }
+  background-color: #ffffff;
+}
+
+header nav ul.nav-area li:last-child {
+  border-right: 0;
+}
 
 /*************** スライダー ****************/
-.slick_container {
+.slick-container {
   width: 100%;
   /* 任意の値 */
-  margin: 0 auto;
+  margin: 20px auto 50px;
   /* 任意の値 */
-  position: relative; }
+  position: relative;
+}
 
 .slick-prev, .slick-next {
   width: 50px;
   /* 画像幅 */
-  height: 50px; }
+  height: 90px;
+}
 
 .slick-prev:before, .slick-next:before {
-  content: ""; }
+  content: "";
+}
 
 button.slick-prev, button.slick-next {
-  z-index: 2; }
+  z-index: 1;
+}
 
 .slick-prev {
-  left: 20px; }
+  left: 20px;
+}
 
 .slick-next {
-  right: 20px; }
+  right: 20px;
+}
 
 .slick-arrow {
-  z-index: 10; }
+  z-index: 1;
+}
 
 main ul li img {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*************** メインコンテンツ ******************/
+/**** メインコンテンツ内共通設定 ****/
+main {
+  position: relative;
+  top: 130px;
+}
+
+.content-title {
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.content-detail {
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto;
+}
+
+/**** ABOUT ****/
+div#wrap article p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+div#wrap article div.about-detail {
+  display: flex;
+}
+
+/**** BLOG ****/
+/**** CONTACT ****/

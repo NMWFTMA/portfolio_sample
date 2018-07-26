@@ -1,5 +1,6 @@
+// compileExpanded: ../css/$1.css
 @charset "UTF-8";
-$main-color: #fff6ee;
+$main-color: rgba(255,246,238,0.6);
 $sub-color: #60d2c9;
 $accent-color: #88e2af;
 /**************** 共通設定 *********************/
@@ -12,12 +13,26 @@ html {
    */
   font-size: 62.5%;
   font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
+  background: repeat url(../images/index-background-01.jpg);
   body {
     font-size: 1.6rem; //デフォルト16px
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em; //文字間
+    line-height: 200%; //行間
     background-color: $main-color;
     margin: 0 auto;
     max-width: 980px;
+    h1 {
+      font-size: 3.0rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 2.0rem;
+    }
+    a {
+      font-size: 2.0rem;
+    }
   }
 }
 /**************** ページタイトル *****************/
@@ -25,74 +40,84 @@ header {
   font-size: 3.6rem;
   font-weight: bold;
   color: $sub-color;
-  margin: 20px 0;
+  background: url(../images/index-nav-01.jpg);
+  //ヘッダ要素固定
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  z-index: 2;
+  max-width: 980px;
+  width: 100%;
+  //ここまで
+  /************ トップのロゴ **************/
   div.logo {
     text-align: center;
+    margin-bottom: 20px;
     h1 {
       display: inline-block;
     }
-    p{
-      font-size: 2.0rem;
+    p {
       margin: 0 auto;
     }
   }
-}
+  /*************** ナビバー *******************/
+  nav {
+    ul.nav-area {
+      margin-bottom: 10px;
+      li.nav-item {
+        box-sizing: border-box;//widthにborderを含める（widthに100%指定してOKよ）
+        display: inline-block;
+        width: 25%;
+        border-right: 2px;
+        border-color:#ffffff;
+        border-style:  solid;
+        background-color: $sub-color;
 
-/*************** ナビバー *******************/
-nav {
-  ul.nav_area {
-    margin-bottom: 10px;
-    li.nav_item {
-      box-sizing: border-box;//widthにborderを含める（widthに100%指定してOKよ）
-      display: inline-block;
-      width: 25%;
-      border-right: 2px;
-      border-color:#ffffff;
-      border-style:  solid;
-      background-color: $sub-color;
-
-      //子要素のaタグ中央揃え
-      text-align: center;
-      a {
-        color: #ffffff;
-        letter-spacing: 0.4em;
-        font-size: 2.0rem;
-        font-weight: bold;
-        text-decoration: none;
-        display: block;
-        //width: 100%;
-        padding: 1.0rem;
-        margin: 0 auto;
+        //子要素のaタグ中央揃え
+        text-align: center;
+        a {
+          color: #ffffff;
+          letter-spacing: 0.4em;
+          font-size: 2.0rem;
+          font-weight: bold;
+          text-decoration: none;
+          display: block;
+          //width: 100%;
+          padding: 15px;
+          margin: 0 auto;
+        }
+        a:hover {
+          color: $sub-color;
+          background-color: #ffffff;
+        }
       }
-      a:hover {
-        color: $sub-color;
-        background-color: #ffffff;
+      li:last-child {
+        //最後の要素のボーダーラインを消す
+        border-right: 0;
       }
     }
-    li:last-child {
-      //最後の要素のボーダーラインを消す
-      border-right: 0;
-    }
-  }
-}
+  } //ナビバー終了
+} //ヘッダ終了
+
+
 /*************** スライダー ****************/
 //スライダー本体のサイズ
-.slick_container {
+.slick-container {
     width:100%; /* 任意の値 */
-    margin:0 auto; /* 任意の値 */
+    margin:20px auto 50px; /* 任意の値 */
     position:relative;
 }
-
+//ボタンサイズと矢印画像のサイズを合わせる(今回は判定広めにした)
  .slick-prev, .slick-next {
     width:50px; /* 画像幅 */
-    height:50px /* 画像高さ */
+    height:90px /* 画像高さ */
 }
 .slick-prev:before, .slick-next:before {
     content:"";
 }
 
 button.slick-prev, button.slick-next {
-    z-index:2;
+    z-index:1;
 }
 
 .slick-prev {
@@ -103,7 +128,7 @@ button.slick-prev, button.slick-next {
 }
 
 .slick-arrow {
-  z-index:10;
+  z-index:1;
 }
 
 //微調整
@@ -116,4 +141,42 @@ main {
       }
     }
   }
+} //スライダー終了
+
+/*************** メインコンテンツ ******************/
+
+/**** メインコンテンツ内共通設定 ****/
+main {
+  position: relative;
+  top:130px;
 }
+.content-title {
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto;
+}
+.content-detail {
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto;
+}
+
+/**** ABOUT ****/
+div#wrap {
+  article {
+    h1.about-title {
+      //文字色でも変えてみる？
+    }
+    p {
+      width: 75%;
+      margin: 0 auto;
+    }
+    div.about-detail {
+      display: flex;
+    }
+  }
+}
+
+/**** BLOG ****/
+
+/**** CONTACT ****/

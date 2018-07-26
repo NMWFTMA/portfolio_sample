@@ -4,51 +4,38 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-html	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^<html lang="ja">$/;"	function	line:2
-head	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^  <head>$/;"	function	line:3
-meta	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <meta charset="UTF-8">$/;"	function	line:4
-title	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <title>Document<\/title>$/;"	function	line:5
-meta	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <meta name="viewport" content="width=device-width, initial-scale=1.0">$/;"	function	line:6
-meta	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <meta http-equiv="X-UA-Compatible" content="ie=edge">$/;"	function	line:7
-link	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <link rel="stylesheet" type="text\/css" href="css\/reset.css">$/;"	function	line:8
-link	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <link href="https:\/\/use.fontawesome.com\/releases\/v5.0.6\/css\/all.css" rel="stylesheet">$/;"	function	line:9
-link	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <link rel="stylesheet" type="text\/css" href="css\/style.css">$/;"	function	line:10
-body	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^  <body>$/;"	function	line:12
-header	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^  <header>$/;"	function	line:13
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <div class="logo">$/;"	function	line:14
-i	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <i class="fab fa-envira"><\/i>$/;"	function	line:15
-h	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <h1 class="top_title">portFolio<\/h1>$/;"	function	line:16
-p	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <p>for acchan<\/p>$/;"	function	line:17
-main	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^  <main>$/;"	function	line:20
-nav	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <nav>$/;"	function	line:21
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="nav_inner">$/;"	function	line:22
-ul	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <ul class="nav_area">$/;"	function	line:23
-li	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^          <li class="nav_item"><a href="#">HOME<\/a><\/li><li class="nav_item"><a href="#">ABOUT<\/a><\/li><li class="nav_item"><a href="#">BLOG<\/a><\/li><li class="nav_item"><a href="#">CONTENT<\/a><\/li>$/;"	function	line:25
-section	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <section class="nav_under_img">$/;"	function	line:29
-img	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <img src="#" alt="フェレット">$/;"	function	line:30
-section	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <section class="about">$/;"	function	line:32
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="about_title">$/;"	function	line:33
-h	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <h1>ABOUT<\/h1>$/;"	function	line:34
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="about_text">$/;"	function	line:36
-p	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <p>aboutのテキストが入ります。aboutのテキストが入ります。aboutのテキストが入ります。<br>$/;"	function	line:37
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="about_contents">$/;"	function	line:42
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <div class="product"><\/div>$/;"	function	line:43
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <div class="skill"><\/div>$/;"	function	line:44
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <div class="other"><\/div>$/;"	function	line:45
-section	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <section class="blog">$/;"	function	line:49
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="blog_title">$/;"	function	line:50
-h	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <h1>BLOG<\/h1>$/;"	function	line:51
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="blog_detail">$/;"	function	line:53
-img	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <img src="#" alt="blogの写真">$/;"	function	line:54
-p	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <p>blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。<br>$/;"	function	line:55
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="blog_history">$/;"	function	line:59
-p	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <p>blogのヒストリーが入ります。blogのヒストリーが入ります。blogのヒストリーが入ります。blogのヒストリーが入ります。<br>$/;"	function	line:60
-section	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^    <section class="contant">$/;"	function	line:66
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^      <div class="contact_box">$/;"	function	line:67
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^        <div class="contact_area">$/;"	function	line:68
-div	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^          <div class="contact_form">$/;"	function	line:69
-form	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^            <form action="#" method="post">$/;"	function	line:70
-input	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^              <input type="text" name="name" value="name">$/;"	function	line:71
-input	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^              <input type="text" name="mail" value="addres">$/;"	function	line:72
-textarea	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^              <textarea name="name" rows="8" cols="80"><\/textarea>$/;"	function	line:73
-form	C:\Users\igaguri\Desktop\portfolio_sample\index.html	/^              <form>$/;"	function	line:74
+main-color	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^$main-color: #fff6ee;$/;"	function	line:2
+sub-color	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^$sub-color: #60d2c9;$/;"	function	line:3
+accent-color	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^$accent-color: #88e2af;$/;"	function	line:4
+html	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^html {$/;"	function	line:6
+body	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^  body {$/;"	function	line:15
+h1	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    h1 {$/;"	function	line:21
+p	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    p {$/;"	function	line:24
+a	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    a {$/;"	function	line:27
+header	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^header {$/;"	function	line:33
+div.logo	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^  div.logo {$/;"	function	line:41
+h1	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    h1 {$/;"	function	line:43
+p	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    p {$/;"	function	line:46
+nav	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^nav {$/;"	function	line:54
+ul.nav-area	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^  ul.nav-area {$/;"	function	line:55
+li.nav-item	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    li.nav-item {$/;"	function	line:57
+a	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^      a {$/;"	function	line:68
+a:hover	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^      a:hover {$/;"	function	line:79
+li:last-child	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    li:last-child {$/;"	function	line:84
+.slick-container	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^.slick-container {$/;"	function	line:93
+.slick-prev, .slick-next	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^ .slick-prev, .slick-next {$/;"	function	line:99
+.slick-prev:before, .slick-next:before	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^.slick-prev:before, .slick-next:before {$/;"	function	line:103
+button.slick-prev, button.slick-next	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^button.slick-prev, button.slick-next {$/;"	function	line:107
+.slick-prev	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^.slick-prev {$/;"	function	line:111
+.slick-next	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^.slick-next {$/;"	function	line:114
+.slick-arrow	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^.slick-arrow {$/;"	function	line:118
+main	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^main {$/;"	function	line:123
+ul	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^  ul {$/;"	function	line:124
+li	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    li {$/;"	function	line:125
+img	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^      img {$/;"	function	line:126
+main	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^main {$/;"	function	line:137
+.content-title	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^.content-title {$/;"	function	line:141
+div	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^div {$/;"	function	line:148
+article	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^  article {$/;"	function	line:149
+.about-title	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    .about-title {$/;"	function	line:150
+div	C:\Users\igaguri\Desktop\portfolio_sample\scss\style.scss	/^    div {$/;"	function	line:153

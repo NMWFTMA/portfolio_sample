@@ -26,24 +26,25 @@
     <script type="text/javascript" src="js/main.js"></script>
   </head>
 
-  <!-- くしくし。へけっ！ -->
+  <!-- 「くしくし。へけっ！」 -->
 
   <body>
   <header>
     <div class="logo">
       <i class="fab fa-envira"></i>
-      <h1 class="top_title">portFolio</h1>
+      <h1 class="top-title">portFolio</h1>
       <p>for acchan</p>
     </div>
+    <nav>
+      <ul class="nav-area">
+        <!-- liを改行すると半角スペースが挿入されてスタイルがおかしくなるよ！ -->
+        <li class="nav-item"><a href="#">HOME</a></li><li class="nav-item"><a href="#">ABOUT</a></li><li class="nav-item"><a href="#">BLOG</a></li><li class="nav-item"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <ul class="nav_area">
-      <!-- liを改行すると半角スペースが挿入されてスタイルがおかしくなるよ！ -->
-      <li class="nav_item"><a href="#">HOME</a></li><li class="nav_item"><a href="#">ABOUT</a></li><li class="nav_item"><a href="#">BLOG</a></li><li class="nav_item"><a href="#">CONTACT</a></li>
-    </ul>
-  </nav>
+
   <main>
-    <div class="slick_container">
+    <div class="slick-container">
       <!-- スライダー画像 -->
       <ul id="slider">
         <li><img src="images/index-top-01.jpeg" alt="フェレット"></li>
@@ -60,54 +61,69 @@
           <img src="images/slide-prev.png" alt="←">
         </div>
       </div>
-    </div>
-    <article class="about">
-      <div class="about_title">
-        <h1>ABOUT</h1>
-      </div>
-      <div class="about_text">
-        <p>aboutのテキストが入ります。aboutのテキストが入ります。aboutのテキストが入ります。<br>
-          aboutのテキストが入ります。aboutのテキストが入ります。<br>
-          aboutのテキストが入ります。aboutのテキストが入ります。aboutのテキストが入ります。aboutのテキストが入ります。
+    </div><!-- スライダー終了 -->
+    <!-- メインコンテンツ -->
+    <div id="wrap">
+      <article class="about">
+        <h1 class="about-title content-title">ABOUT</h1>
+        <p> フロントエンドを中心に活動中。<br>
+ブログの更新や、コーポレートサイトのデザインを担当いたしました。<br>
+未熟ながらもより良いサービスの提供をするため日々勉強中です。
         </p>
-      </div>
-      <div class="about_contents">
-        <section class="product"></section>
-        <section class="skill"></section>
-        <section class="other"></section>
-      </div>
-    </article>
+        <div class="about-detail">
+          <section class="product content-detail">
+            <h2>PRODUCT</h2>
+            <p>
+              あれこれ<br>
+              どれこれ<br>
+              あれだ！<br>
+            </p>
+          </section>
+          <section class="skill content-detail">
+            <h2>SKILL</h2>
+            <p>
+              あれこれ<br>
+              どれこれ<br>
+              あれだ！<br>
+            </p>
+          </section>
+          <section class="other content-detail">
+            <h2>OTHER</h2>
+            <p>
+              あれこれ<br>
+              どれこれ<br>
+              あれだ！<br>
+            </p>
+          </section>
+        </div>
+      </article>
 
-    <article class="blog">
-      <div class="blog_title">
-        <h1>BLOG</h1>
-      </div>
-      <div class="blog_detail">
-        <img src="#" alt="blogの写真">
-        <p>blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。<br>
-          blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。<br>
-          blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。</p>
-      </div>
-      <div class="blog_history">
-        <p>blogのヒストリーが入ります。blogのヒストリーが入ります。blogのヒストリーが入ります。blogのヒストリーが入ります。<br>
-          blogのヒストリーが入ります。blogのヒストリーが入ります。blogのヒストリーが入ります。<br>
-          blogのヒストリーが入ります。blogのヒストリーが入ります。</p>
-      </div>
-    </article>
+      <article class="blog">
+          <h1 class="blog-title content-title">BLOG</h1>
+        <div class="blog-detail">
+          <img src="images/index-blog-01.jpeg" alt="blogの写真">
+          <p>blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。<br>
+            blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。<br>
+            blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。</p>
+        </div>
+        <a href="#"><p>もっと見る →</p></a>
+      </article>
 
-    <section class="contant">
-      <div class="contact_box">
-        <div class="contact_area">
-          <div class="contact_form">
-            <form action="#" method="post">
-              <input type="text" name="name" value="name">
-              <input type="text" name="mail" value="addres">
-              <textarea name="name" rows="8" cols="80"></textarea>
-              <form>
+      <article class="contant">
+        <h1 class="blog-title content-title">CONTACT</h1>
+        <div class="contact-box">
+          <div class="contact-area">
+            <div class="contact-form">
+              <form action="#" method="post">
+                <input type="text" name="name" value="name">
+                <input type="text" name="mail" value="address">
+                <textarea name="name" rows="8" cols="80"></textarea>
+                <form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </article>
+    </div>
   </main>
   </body>
 </html>
