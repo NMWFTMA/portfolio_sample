@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/**form内マーク（必須/任意）
+ * background-colorは以下を使用
+ * 必須：$red
+ * 任意：$green
+ */
+/**form内マーク（）
+ * background-colorは以下を使用
+ * 送信/確認：$blue
+ * 情報：$green
+ */
 /**************** 共通設定 *********************/
 html {
   /**
@@ -8,7 +18,7 @@ html {
    * あずきフォントから優先的に使用される。（フリーフォントだよー！まるくてかわいいな！ありがとう！）
    */
   font-size: 62.5%;
-  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
+  font-family: 'Tahoma','メイリオ','Century','HGS創英角ﾎﾟｯﾌﾟ体',sans-serif;
   background: repeat url(../images/index-background-01.jpg);
 }
 
@@ -49,7 +59,6 @@ header {
   z-index: 2;
   max-width: 980px;
   width: 100%;
-  /************ トップのロゴ **************/
   /*************** ナビバー *******************/
 }
 
@@ -81,6 +90,10 @@ header nav ul.nav-area li.nav-item {
   text-align: center;
 }
 
+header nav ul.nav-area li.nav-item:last-child {
+  border-right: 0;
+}
+
 header nav ul.nav-area li.nav-item a {
   color: #ffffff;
   letter-spacing: 0.4em;
@@ -95,10 +108,6 @@ header nav ul.nav-area li.nav-item a {
 header nav ul.nav-area li.nav-item a:hover {
   color: #60d2c9;
   background-color: #ffffff;
-}
-
-header nav ul.nav-area li:last-child {
-  border-right: 0;
 }
 
 /*************** スライダー ****************/
@@ -151,11 +160,12 @@ main {
 }
 
 #wrap {
-  background-color: rgba(255, 246, 238, 0.4);
+  background-color: rgba(255, 246, 238, 0.8);
   /**** 共通部分 ****/
 }
 
 #wrap article {
+  padding-bottom: 20px;
   /**** ABOUT ****/
   /**** BLOG ****/
   /**** CONTACT ****/
@@ -164,7 +174,7 @@ main {
 #wrap article .content-title {
   font-weight: bold;
   text-align: center;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 #wrap article .content-text {
@@ -209,7 +219,82 @@ main {
   width: 60%;
 }
 
-#wrap article #jump-blog {
-  text-align: right;
+#wrap article div {
   margin-right: 20px;
+  text-align: right;
+}
+
+#wrap article div #jump-blog:link {
+  color: #88e2af;
+}
+
+#wrap article div #jump-blog:visited {
+  color: #88e2af;
+}
+
+#wrap article #form {
+  font-size: 1.8rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#wrap article #form table tr td {
+  vertical-align: top;
+  padding: 10px 20px;
+}
+
+#wrap article #form table tr td .warning {
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #FF6170;
+}
+
+#wrap article #form table tr td .info {
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #47D978;
+}
+
+#wrap article #form table tr td input[type=text], #wrap article #form table tr td textarea {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  border-radius: 4px;
+  width: 500px;
+  border: solid 1px #ccc;
+}
+
+#wrap article #form table tr td input[type=text]:focus, #wrap article #form table tr td textarea:focus {
+  border-color: #54BAFF;
+}
+
+#wrap article #form div {
+  padding: 0;
+  text-align: center;
+}
+
+#wrap article #form div input[type="submit"] {
+  padding: 5px 30px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  letter-spacing: 0.8em;
+  text-align: center;
+  text-indent: 1em;
+  border: solid 0;
+  border-radius: 4px;
+  background-color: #54BAFF;
+  box-shadow: 0 3px #2B5F82;
+}
+
+#wrap article #form div input[type="submit"]:active {
+  background-color: #479CD6;
+  box-shadow: none;
+  margin-top: 3px;
+}
+
+#wrap #about {
+  padding-top: 40px;
 }

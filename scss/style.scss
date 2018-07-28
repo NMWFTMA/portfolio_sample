@@ -1,8 +1,52 @@
 // compileExpanded: ../css/$1.css
 @charset "UTF-8";
-$main-color: rgba(255,246,238,0.4);
+//背景色
+$main-color: rgba(255,246,238,0.8);
 $sub-color: #60d2c9;
 $accent-color: #88e2af;
+//ボタンカラー
+$red: #FF6170;
+$green: #47D978;
+$blue: #54BAFF;
+//ブレイクポイント
+$break-point-SP: 768px;
+$break-point-PC: 980px;
+
+/**form内マーク（必須/任意）
+ * background-colorは以下を使用
+ * 必須：$red
+ * 任意：$green
+ */
+
+@mixin tag{
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+/**form内マーク（）
+ * background-colorは以下を使用
+ * 送信/確認：$blue
+ * 情報：$green
+ */
+@mixin button-submit{
+  padding: 5px 30px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  letter-spacing: 0.8em;
+  text-align: center;
+  text-indent:1em; //letter-spacingの最後の空間を削除
+  border: solid 0;
+  border-radius: 4px;
+  background-color: $blue;
+  box-shadow: 0 3px #2B5F82; //ボタンに影をつける
+  &:active {
+    background-color: #479CD6;
+    box-shadow: none;
+    margin-top: 3px;
+  }
+}
 /**************** 共通設定 *********************/
 html {
   /**
@@ -12,7 +56,7 @@ html {
    * あずきフォントから優先的に使用される。（フリーフォントだよー！まるくてかわいいな！ありがとう！）
    */
   font-size: 62.5%;
-  font-family: 'あずきフォント','メイリオ','HGS創英角ﾎﾟｯﾌﾟ体';
+  font-family: 'Tahoma','メイリオ','Century','HGS創英角ﾎﾟｯﾌﾟ体',sans-serif;
   background: repeat url(../images/index-background-01.jpg);
   body {
     font-size: 1.6rem; //デフォルト16px
@@ -21,7 +65,7 @@ html {
     //relativeしたらずれたし、とりあえず代わりにid="wrap"とで指定した
     //background-color: $main-color;
     margin: 0 auto;
-    max-width: 980px;
+    max-width: $break-point-PC;
     h1 {
       font-size: 3.0rem;
     }
@@ -48,10 +92,9 @@ header {
   height: 150px;
   padding-top: 20px;
   z-index: 2;
-  max-width: 980px;
+  max-width: $break-point-PC;
   width: 100%;
   //ここまで
-  /************ トップのロゴ **************/
   div.logo {
     text-align: center;
     margin-bottom: 20px;
@@ -77,6 +120,10 @@ header {
 
         //子要素のaタグ中央揃え
         text-align: center;
+        &:last-child {
+          //最後の要素のボーダーラインを消す
+          border-right: 0;
+        }
         a {
           color: #ffffff;
           letter-spacing: 0.4em;
@@ -87,16 +134,13 @@ header {
           //width: 100%;
           padding: 15px;
           margin: 0 auto;
-        }
-        a:hover {
-          color: $sub-color;
-          background-color: #ffffff;
+          &:hover {
+            color: $sub-color;
+            background-color: #ffffff;
+          }
         }
       }
-      li:last-child {
-        //最後の要素のボーダーラインを消す
-        border-right: 0;
-      }
+
     }
   } //ナビバー終了
 } //ヘッダ終了
@@ -152,6 +196,7 @@ main {
 
 /*************** メインコンテンツ ******************/
 main {
+  //nav固定による調整
   position: relative;
   top:150px;
 }
@@ -160,10 +205,11 @@ main {
   background-color: $main-color;
   /**** 共通部分 ****/
   article {
+    padding-bottom: 20px;
     .content-title {
       font-weight: bold;
       text-align: center;
-      padding: 40px 0;
+      padding: 10px 0;
     }
     .content-text {
       text-align: center;
@@ -213,12 +259,69 @@ main {
         }
       }
     }
-    #jump-blog {
-      text-align: right;
+    div {
       margin-right: 20px;
+      text-align: right;
+      #jump-blog {
+        &:link {
+          color: $accent-color;
+        }
+        &:visited {
+          color: $accent-color;
+        }
+      }
     }
      //BLOG終了
 
     /**** CONTACT ****/
-  }
+    .blog-title {
+      //TODO 文字色でも変えてみる？
+    }
+    #form {
+      font-size: 1.8rem;
+      width: 80%;
+      margin: 0 auto;
+      table {
+        tr {
+          td {
+            vertical-align: top;
+            padding: 10px 20px;
+            //必須タグ
+            .warning {
+              @include tag;
+              background-color: $red;
+            }
+            //任意タグ
+            .info {
+              @include tag;
+              background-color: $green;
+            }
+            input[type=text], textarea {
+                font-size: 1.8rem;
+                font-family: sans-serif;
+                border-radius: 4px;
+                width: 500px;
+                border: solid 1px #ccc;
+                &:focus {
+                  border-color: $blue;
+                }
+            }
+          }
+        }
+      }
+      div {
+        padding: 0;
+        //送信ボタン中央寄せ
+        text-align: center;
+        input[type="submit"] {
+          @include button-submit;
+        }
+      }
+    }
+  } //article終了
+//微修正（ABOUTのタイトルのマージン）
+#about {
+  padding-top: 40px;
 }
+
+} //wrap終了

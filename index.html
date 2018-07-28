@@ -26,7 +26,7 @@
     <script type="text/javascript" src="js/main.js"></script>
   </head>
 
-  <!-- 「くしくし。へけっ！」 -->
+  <!-- 「くしくし。へけっ！ここからbody要素なのだ！頑張るのだ！」 -->
 
   <body>
   <header>
@@ -38,7 +38,7 @@
     <nav>
       <ul class="nav-area">
         <!-- liを改行すると半角スペースが挿入されてスタイルがおかしくなるよ！ -->
-        <li class="nav-item"><a href="#">HOME</a></li><li class="nav-item"><a href="#">ABOUT</a></li><li class="nav-item"><a href="#">BLOG</a></li><li class="nav-item"><a href="#">CONTACT</a></li>
+        <li class="nav-item"><a href="#">HOME</a></li><li class="nav-item"><a href="#about">ABOUT</a></li><li class="nav-item"><a href="#blog">BLOG</a></li><li class="nav-item"><a href="#contant">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -65,7 +65,7 @@
     <!-- メインコンテンツ -->
     <!-- ABOUT -->
     <div id="wrap">
-      <article class="about">
+      <article id="about">
         <h1 class="about-title content-title">ABOUT</h1>
         <p class="content-text"> フロントエンドを中心に活動中。<br>
 ブログの更新や、コーポレートサイトのデザインを担当いたしました。<br>
@@ -81,7 +81,7 @@
           <section class="skill">
             <h2 class="sub-title">SKILL</h2>
             <p>
-              そうですねぇ、しいて言うなら草むしりとかですね。
+              誰よりもラジオ体操をきれいに踊れます
             </p>
           </section>
           <section class="other">
@@ -91,13 +91,13 @@
               はじけろシナプス！<br>
               Vanishment<br>
               This<br>
-              World！！！
+              ！！！World！！！
             </p>
           </section>
         </div>
       </article>
       <!-- BLOG -->
-      <article class="blog">
+      <article id="blog">
         <h1 class="blog-title content-title">BLOG</h1>
         <!-- TODO どうやって取得するか後で決める -->
         <div class="blog-detail">
@@ -105,7 +105,6 @@
             <img src="images/index-blog-01.jpeg" alt="blogの写真">
             <p>
             blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入りますblogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります。blogのテキストが入ります
-
           </p>
           </section>
           <section class="content-detail">
@@ -115,24 +114,43 @@
           </p>
           </section>
         </div>
-        <p id="jump-blog"><a href="#">もっと見る →</a></p>
+        <div><a href="#" id="jump-blog">もっと見る →</a></div>
       </article>
       <!--CONTACT -->
-      <article class="contant">
+      <article id="contant">
         <h1 class="blog-title content-title">CONTACT</h1>
-        <div class="contact-box">
-          <div class="contact-area">
-            <div class="contact-form">
-            </div>
-          </div>
-        </div>
-              <form action="#" method="post">
-                <input type="text" name="name" value="name">
-                <input type="text" name="mail" value="address">
-                <textarea name="name" rows="8" cols="80"></textarea>
-                <input type="submit" name="submit" value="送信">
-              </form>
+        <form action="#blog" method="post" id="form">
+          <table>
+            <tr>
+              <td>
+                <label>Name <span class="warning">必須</span></label>
+              </td>
+              <td>
+                <input type="text" name="name" value="" size="20" placeholder="Name" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Twitter <span class="info">任意</span></label>
 
+              </td>
+              <td>
+                <input type="text" name="twitter" value=""  size="20" placeholder="@twitter name">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Free space <span class="warning">必須</span></label>
+              </th>
+              <td>
+                <textarea name="free-spase" rows="6" cols="25" placeholder="ご意見・ご要望等" required></textarea>
+              </td>
+            </tr>
+          </table>
+          <div>
+            <input type="submit" name="submit" value="送信">
+          </div>
+        </form>
       </article>
     </div>
   </main>
