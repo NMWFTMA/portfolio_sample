@@ -16,7 +16,6 @@ html body {
   font-size: 1.6rem;
   letter-spacing: 0.1em;
   line-height: 200%;
-  background-color: rgba(255, 246, 238, 0.6);
   margin: 0 auto;
   max-width: 980px;
 }
@@ -45,6 +44,7 @@ header {
   background: url(../images/index-nav-01.jpg);
   position: fixed;
   top: 0;
+  height: 150px;
   padding-top: 20px;
   z-index: 2;
   max-width: 980px;
@@ -105,7 +105,7 @@ header nav ul.nav-area li:last-child {
 .slick-container {
   width: 100%;
   /* 任意の値 */
-  margin: 20px auto 50px;
+  margin: 0 auto;
   /* 任意の値 */
   position: relative;
 }
@@ -136,39 +136,80 @@ button.slick-prev, button.slick-next {
   z-index: 1;
 }
 
-main ul li img {
-  margin: 0 auto;
+#slider {
+  margin: 0;
+}
+
+main div ul li img {
   width: 100%;
 }
 
 /*************** メインコンテンツ ******************/
-/**** メインコンテンツ内共通設定 ****/
 main {
   position: relative;
-  top: 130px;
+  top: 150px;
 }
 
-.content-title {
+#wrap {
+  background-color: rgba(255, 246, 238, 0.4);
+  /**** 共通部分 ****/
+}
+
+#wrap article {
+  /**** ABOUT ****/
+  /**** BLOG ****/
+  /**** CONTACT ****/
+}
+
+#wrap article .content-title {
   font-weight: bold;
   text-align: center;
-  margin: 50px auto;
+  padding: 40px 0;
 }
 
-.content-detail {
-  font-weight: bold;
+#wrap article .content-text {
   text-align: center;
-  margin: 50px auto;
+  margin-bottom: 50px;
 }
 
-/**** ABOUT ****/
-div#wrap article p {
-  width: 75%;
+#wrap article .about-detail {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#wrap article .about-detail .product, #wrap article .about-detail .skill, #wrap article .about-detail .other {
+  width: 30%;
   margin: 0 auto;
 }
 
-div#wrap article div.about-detail {
-  display: flex;
+#wrap article .about-detail .product .sub-title, #wrap article .about-detail .skill .sub-title, #wrap article .about-detail .other .sub-title {
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/**** BLOG ****/
-/**** CONTACT ****/
+#wrap article .about-detail .product p, #wrap article .about-detail .skill p, #wrap article .about-detail .other p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#wrap article .blog-detail .content-detail {
+  display: flex;
+  margin: 20px auto;
+}
+
+#wrap article .blog-detail .content-detail img {
+  width: 300px;
+  height: 200px;
+  margin: 0 30px;
+}
+
+#wrap article .blog-detail .content-detail p {
+  font-size: 1.6rem;
+  width: 60%;
+}
+
+#wrap article #jump-blog {
+  text-align: right;
+  margin-right: 20px;
+}

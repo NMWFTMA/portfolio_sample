@@ -1,6 +1,6 @@
 // compileExpanded: ../css/$1.css
 @charset "UTF-8";
-$main-color: rgba(255,246,238,0.6);
+$main-color: rgba(255,246,238,0.4);
 $sub-color: #60d2c9;
 $accent-color: #88e2af;
 /**************** 共通設定 *********************/
@@ -18,7 +18,8 @@ html {
     font-size: 1.6rem; //デフォルト16px
     letter-spacing: 0.1em; //文字間
     line-height: 200%; //行間
-    background-color: $main-color;
+    //relativeしたらずれたし、とりあえず代わりにid="wrap"とで指定した
+    //background-color: $main-color;
     margin: 0 auto;
     max-width: 980px;
     h1 {
@@ -44,6 +45,7 @@ header {
   //ヘッダ要素固定
   position: fixed;
   top: 0;
+  height: 150px;
   padding-top: 20px;
   z-index: 2;
   max-width: 980px;
@@ -104,7 +106,7 @@ header {
 //スライダー本体のサイズ
 .slick-container {
     width:100%; /* 任意の値 */
-    margin:20px auto 50px; /* 任意の値 */
+    margin:0 auto; /* 任意の値 */
     position:relative;
 }
 //ボタンサイズと矢印画像のサイズを合わせる(今回は判定広めにした)
@@ -132,51 +134,91 @@ button.slick-prev, button.slick-next {
 }
 
 //微調整
+#slider {
+  margin: 0;
+}
+
 main {
+  div {
   ul {
     li {
       img {
-        margin: 0 auto;
         width: 100%;
       }
     }
   }
+  }
 } //スライダー終了
 
 /*************** メインコンテンツ ******************/
-
-/**** メインコンテンツ内共通設定 ****/
 main {
   position: relative;
-  top:130px;
-}
-.content-title {
-  font-weight: bold;
-  text-align: center;
-  margin: 50px auto;
-}
-.content-detail {
-  font-weight: bold;
-  text-align: center;
-  margin: 50px auto;
+  top:150px;
 }
 
-/**** ABOUT ****/
-div#wrap {
+#wrap {
+  background-color: $main-color;
+  /**** 共通部分 ****/
   article {
-    h1.about-title {
-      //文字色でも変えてみる？
+    .content-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 40px 0;
     }
-    p {
-      width: 75%;
-      margin: 0 auto;
+    .content-text {
+      text-align: center;
+      margin-bottom: 50px;
+    } //共通部分終了
+
+    /**** ABOUT ****/
+    .about-title {
+      // TODO 文字色でも変えてみる？
     }
-    div.about-detail {
+    .about-detail {
       display: flex;
+      margin: 0 auto;
+      text-align: center;
+      .product, .skill, .other {
+        width: 30%;
+        margin: 0 auto;
+        .sub-title {
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        p {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }  //ABOUT終了
+
+    /**** BLOG ****/
+    .blog-title {
+      //TODO 文字色でも変えてみる？
     }
+    .blog-detail {
+      .content-detail {
+        display: flex;
+        margin: 20px auto;
+        img {
+          //画像サイズは固定（ブログ投稿時に指定の予定）
+          width: 300px;
+          height: 200px;
+          margin: 0 30px;
+
+        }
+        p {
+          font-size: 1.6rem;
+          width: 60%;
+        }
+      }
+    }
+    #jump-blog {
+      text-align: right;
+      margin-right: 20px;
+    }
+     //BLOG終了
+
+    /**** CONTACT ****/
   }
 }
-
-/**** BLOG ****/
-
-/**** CONTACT ****/
